@@ -1,27 +1,142 @@
 
-<header>
-   <h1>Gero Logistics</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GERO Logistics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    /* Header */
+    header {
+      background-color: #002B5B;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #FFD700;
+      color: #002B5B;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* Services Section */
+    .services {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .services h2 {
+      text-align: center;
+      color: #002B5B;
+      margin-bottom: 20px;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services ul li {
+      background-color: #f4f4f4;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 5px solid #002B5B;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #002B5B;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>GERO Logistics</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Our Services</a>
-
-        <a href="track.html">Track Shipment</a>
-        <a href="contact.html">Contact Us <p>Phone: +1 647 679 5342</p>
-<p>Email: <a href="mailto:olumide@gerologistics.ca">olumide@gerologistics.ca</a></p>
-
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="track.html">Track Shipment</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
-</header>
-<div class="container">
+  </header>
 
-<h2>Welcome to Gero Logistics</h2>
-<p>Your trusted partner in global cargo and logistics solutions. Delivering excellence, on time, every time.</p>
-<img src="https://via.placeholder.com/900x300?text=Cargo+Shipments" alt="Cargo Shipments">
-<p><a class="button" href="services.html">Explore Our Services</a></p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to GERO Logistics</h2>
+    <p>Your trusted partner in global cargo and logistics solutions. Delivering excellence, on time, every time.</p>
+  </section>
 
-</div>
-<footer>
-    <p>&copy; 2025 Gero Logistics. All rights reserved.</p>
-</footer>
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Wholesale Trade</li>
+      <li>Logistics Brokerage</li>
+      <li>Freight Forwarding Support</li>
+      <li>International Shipping</li>
+      <li>Customs Assistance</li>
+      <li>Warehousing & Delivery</li>
+      <li>Freight Management</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Phone: +1 647 679 5342 | Email: <a href="mailto:olumide@gerologistics.ca" style="color:white;">olumide@gerologistics.ca</a></p>
+    <p>© 2025 GERO Logistics. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
