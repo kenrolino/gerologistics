@@ -1,31 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GERO Logistics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gero Logistics Services</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: #f9f9f9;
       color: #333;
-      background-color: #f4f4f4;
     }
-
-    /* Header */
-    header {
-      background-color: #002B5B;
-      color: white;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
+    nav {
+      background: #0a4b78;
+      padding: 15px;
+      text-align: center;
     }
     nav a {
       color: white;
@@ -34,109 +24,73 @@
       font-weight: bold;
     }
     nav a:hover {
-      color: #FFD700;
+      text-decoration: underline;
     }
-
-    /* Hero Section */
-    .hero {
+    header {
       text-align: center;
-      padding: 80px 20px;
-      background-color: #FFD700;
-      color: #002B5B;
+      padding: 50px 20px;
+      background: #e8f1f9;
     }
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
+    header h1 {
+      color: #0a4b78;
     }
-    .hero p {
-      font-size: 18px;
-    }
-
-    /* Services Section */
-    .services {
-      max-width: 1000px;
-      margin: auto;
+    section {
       padding: 40px 20px;
-      background-color: white;
+      max-width: 900px;
+      margin: auto;
+      background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .services h2 {
-      text-align: center;
-      color: #002B5B;
+    ol li {
       margin-bottom: 20px;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services ul li {
-      background-color: #f4f4f4;
-      margin: 10px 0;
-      padding: 15px;
-      border-left: 5px solid #002B5B;
-      font-weight: bold;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #002B5B;
-      color: white;
-      text-align: center;
-      padding: 15px 20px;
-    }
-
-    /* Responsive */
-    @media(max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav {
-        margin-top: 10px;
-      }
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
 
-  <!-- Header -->
+  <!-- Homepage Header -->
   <header>
-    <h1>GERO Logistics</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Our Services</a>
-      <a href="track.html">Track Shipment</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+    <h1>Welcome to Gero Logistics Services</h1>
+    <p>Reliable logistics. Global reach.</p>
+    <p><a href="services.html" style="background:#0a4b78;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;">View Our Services</a></p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Welcome to GERO Logistics</h2>
-    <p>Your trusted partner in global cargo and logistics solutions. Delivering excellence, on time, every time.</p>
-  </section>
-
   <!-- Services Section -->
-  <section class="services">
+  <section>
     <h2>Our Services</h2>
-    <ul>
-      <li>Wholesale Trade</li>
-      <li>Logistics Brokerage</li>
-      <li>Freight Forwarding Support</li>
-      <li>International Shipping</li>
-      <li>Customs Assistance</li>
-      <li>Warehousing & Delivery</li>
-      <li>Freight Management</li>
-    </ul>
+    <ol>
+      <li>
+        <strong>Local Pickup & Delivery Coordination</strong><br>
+        We provide reliable pickup and delivery coordination within Sault Ste. Marie and surrounding areas, connecting clients with licensed and insured drivers for safe and timely shipment handling.
+      </li>
+      <li>
+        <strong>Freight Forwarding Support</strong><br>
+        We offer freight forwarding assistance by working closely with trusted logistics partners to ensure smooth transport and handling of domestic and international shipments.
+      </li>
+      <li>
+        <strong>Partnered International Shipping</strong><br>
+        Through our logistics partners, we help clients arrange international shipping solutions — from Canada to global destinations — with full transparency and reliable coordination.
+      </li>
+      <li>
+        <strong>Customs Documentation Support</strong><br>
+        We assist clients with preparing and organizing customs documentation, working in partnership with licensed customs brokers for clearance and compliance.
+      </li>
+      <li>
+        <strong>Warehousing & Distribution Coordination</strong><br>
+        We help clients arrange secure warehousing and coordinate distribution through trusted third-party facilities.
+      </li>
+      <li>
+        <strong>Freight Management & Tracking</strong><br>
+        We provide shipment tracking, freight scheduling, and communication support to ensure every consignment is managed efficiently from pickup to delivery.
+      </li>
+    </ol>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Phone: +1 647 679 5342 | Email: <a href="mailto:olumide@gerologistics.ca" style="color:white;">olumide@gerologistics.ca</a></p>
-    <p>© 2025 GERO Logistics. All rights reserved.</p>
-  </footer>
-
 </body>
 </html>
