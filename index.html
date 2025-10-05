@@ -3,207 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GERO Logistics Services</title>
+  <title>GERO Logistics</title>
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
+      background-color: #f4f4f4;
     }
 
     /* Navigation Bar */
-    nav {
-      background-color: #002b5c;
+    header {
+      background-color: #002147;
       color: white;
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 50px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
-
-    nav .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin-left: 25px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ffd700;
-    }
-
-    /* Hero Section */
-    header {
-      background-color: #ffd700;
-      color: #002b5c;
-      text-align: center;
-      padding: 80px 20px;
     }
 
     header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 20px;
     }
 
-    header p {
-      font-size: 1.2em;
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-    /* Services Section */
-    section#services {
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #ffcc00;
+      color: #002147;
       text-align: center;
-      padding: 60px 20px;
-      background-color: white;
+      padding: 50px 20px;
     }
 
-    #services h2 {
-      color: #002b5c;
-      font-size: 2em;
-      margin-bottom: 40px;
-    }
-
-    .service-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-    }
-
-    .service-card {
-      width: 270px;
-      border-radius: 12px;
-      padding: 20px;
-      color: #002b5c;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    }
-
-    .service-card h3 {
+    .hero h2 {
+      font-size: 32px;
       margin-bottom: 10px;
     }
 
-    /* Footer */
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 20px;
+      background-color: white;
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #002147;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul.services {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.services li {
+      background: #f4f4f4;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 5px solid #002147;
+      border-radius: 5px;
+    }
+
     footer {
-      background-color: #002b5c;
+      background-color: #002147;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9em;
+      font-size: 14px;
     }
 
-    footer a {
-      color: #ffd700;
-      text-decoration: none;
+    a {
+      color: #ffcc00;
     }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Color Variants for Cards */
-    .c1 { background-color: #ffe680; }
-    .c2 { background-color: #b3d9ff; }
-    .c3 { background-color: #ffcccc; }
-    .c4 { background-color: #c2f0c2; }
-    .c5 { background-color: #fff0b3; }
-    .c6 { background-color: #d9b3ff; }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-      }
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      nav ul li {
-        margin: 10px 0;
-      }
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="logo">GERO Logistics</div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Our Services</a></li>
-      <li><a href="#">Track Shipment</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
   <header>
-    <h1>Welcome to GERO Logistics</h1>
-    <p>Your trusted partner in global cargo and logistics solutions. Delivering excellence, on time, every time.</p>
+    <h1>GERO Logistics</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#track">Track Shipment</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
   </header>
 
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-container">
-      <div class="service-card c1">
-        <h3>Wholesale Trade</h3>
-        <p>We provide support for wholesale trading, connecting businesses with reliable supply chains and logistics partners.</p>
-      </div>
-      <div class="service-card c2">
-        <h3>Local Pickup & Delivery</h3>
-        <p>Reliable pickup and delivery coordination within Sault Ste. Marie and surrounding areas, ensuring timely shipments.</p>
-      </div>
-      <div class="service-card c3">
-        <h3>Freight Forwarding Support</h3>
-        <p>Assisting with freight forwarding by collaborating with trusted logistics partners for smooth shipments.</p>
-      </div>
-      <div class="service-card c4">
-        <h3>Partnered International Shipping</h3>
-        <p>Helping clients arrange international shipping solutions with full transparency and reliable coordination.</p>
-      </div>
-      <div class="service-card c5">
-        <h3>Freight Management Support</h3>
-        <p>Scheduling, coordination, and communication support to manage every consignment efficiently.</p>
-      </div>
-      <div class="service-card c6">
-        <h3>Freight Management Tracking</h3>
-        <p>Real-time shipment tracking to keep clients informed from pickup to delivery, ensuring transparency and accountability.</p>
-      </div>
-    </div>
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <h2>Welcome to GERO Logistics</h2>
+    <p>Your trusted partner in global cargo and logistics solutions. Delivering excellence, on time, every time.</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Phone: +1 647 679 5342 | Email: <a href="mailto:olumide@gerologistics.ca">olumide@gerologistics.ca</a></p>
-    <p>© 2025 GERO Logistics. All rights reserved.</p>
-  </footer>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>GERO Logistics is a Canadian-based logistics startup dedicated to connecting businesses and individuals with reliable transport, forwarding, and delivery services. Based in Sault Ste. Marie, Ontario, we provide seamless coordination between shippers, carriers, and customers. Our mission is simple — to bring logistics closer to your neighborhood and shipments to your doorstep.</p>
+    <p>We collaborate with trusted partners across Canada and internationally to ensure each shipment is handled safely, efficiently, and with full transparency.</p>
+  </section>
 
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul class="services">
+      <li><strong>Wholesale Trade:</strong> We help connect bulk suppliers with buyers, providing support for transport coordination and trade logistics.</li>
+      <li><strong>Local Pickup & Delivery:</strong> We coordinate local pickups and deliveries within Sault Ste. Marie and nearby regions with licensed drivers.</li>
+      <li><strong>Freight Forwarding Support:</strong> Assistance with domestic and international freight forwarding through trusted logistics partners.</li>
+      <li><strong>Partnered International Shipping:</strong> Global shipping coordination in collaboration with our international partners for smooth customs and documentation handling.</li>
+      <li><strong>Freight Management Support:</strong> Scheduling, route coordination, and cargo management for reliable shipping outcomes.</li>
+      <li><strong>Freight Management Tracking:</strong> Real-time updates and communication to keep clients informed throughout the shipment process.</li>
+    </ul>
+  </section>
+
+  <!-- TRACK SHIPMENT -->
+  <section id="track">
+    <h2>Track Shipment</h2>
+    <p>Tracking made simple! Enter your shipment tracking number below to check your delivery status.</p>
+    <input type="text" placeholder="Enter Tracking Number" style="padding:10px;width:80%;max-width:400px;">
+    <button style="padding:10px 20px;background-color:#002147;color:white;border:none;border-radius:5px;">Track</button>
+    <p style="margin-top:15px;font-size:14px;color:#666;">*Tracking services are available for supported shipments only.</p>
+  </section>
+
+  <!-- CAREERS -->
+  <section id="careers">
+    <h2>Careers</h2>
+    <p>Join a growing logistics brand that values reliability, innovation, and service excellence. Whether you’re a driver, operations specialist, or administrative professional, GERO Logistics welcomes you to build your career with us.</p>
+    <p>Send your resume to: <a href="mailto:careers@gerologistics.ca">careers@gerologistics.ca</a></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’re here to help you with your logistics needs. Reach out today!</p>
+    <p><strong>Phone:</strong> +1 647 679 5342<br>
+    <strong>Email:</strong> <a href="mailto:olumide@gerologistics.ca">olumide@gerologistics.ca</a><br>
+    <strong>Location:</strong> Sault Ste. Marie, Ontario, Canada</p>
+  </section>
+
+  <footer>
+    © 2025 GERO Logistics. All rights reserved.
+  </footer>
 </body>
 </html>
